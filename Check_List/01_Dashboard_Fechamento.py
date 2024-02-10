@@ -9,7 +9,7 @@ st.set_page_config(layout="wide")
 
 # Indicando onde o arquivo de excel está salvo
 pasta_atual = Path(__file__).parent.parent.parent
-caminho_arquivo = "https://github.com/felipearr03/checklistV2/blob/main/1.1%20CHECK%20LIST%20-%20Declara%C3%A7%C3%B5es%20Estaduais%20Dellys%202024.xlsx"
+caminho_arquivo = "https://github.com/felipearr03/checklistV2/blob/main/1.1 CHECK LIST - Declarações Estaduais Dellys 2024.xlsx"
 
 # Fazendo a leitura do arquivo Excel
 df_fechamento = pd.read_excel(caminho_arquivo, sheet_name=None, parse_dates=True)
