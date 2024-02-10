@@ -9,12 +9,12 @@ st.set_page_config(layout="wide")
 
 # Indicando onde o arquivo de excel está salvo
 pasta_atual = Path(__file__).parent.parent.parent
-caminho_arquivo = pasta_atual / '1.3 CHECK LIST - Fechamento ICMS Dellys 2024.xlsx'
+caminho_arquivo = r"C:\Users\d20448fr\Desktop\1.3 CHECK LIST - Fechamento ICMS Dellys 2024.xlsx"
 
 # Fazendo a leitura do arquivo Excel
 df_fechamento = pd.read_excel(caminho_arquivo, sheet_name=None, parse_dates=True)
 
-logo_path =  pasta_atual / 'DELLYS_LOGO-removebg-preview.png' 
+logo_path =  r"C:\Users\d20448fr\Desktop\DELLYS_LOGO-removebg-preview.png"
 logo = Image.open(logo_path)
 st.sidebar.image(logo, width=200)
 
